@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+  background-image: url(./assets/c4e24fc202dba3fc44a7c4329d33deab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  
+}
+header{
+    max-width: 100%;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 100px;
+
+   
+}
+.logo-image{
+    margin-left: 10px;
+}
+p{
+  color: rgb(189, 52, 231);
+  font-size: 50px;
+}
+
+.container-logo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    padding: 20px;
+    list-style-position: inside;
+  
+   
+    
+    
+}
+ul li{
+    padding: 20px;
+}
+
+.redes-sociais{
+    text-decoration: none;
+    color: rgb(198, 131, 211);
+  
+}
+    
+
+
+
+ul #insta{
+    list-style-image: url(./assets/instagram.png);
+    
+   
+   
+
+}
+
+ul #linkedin{
+    list-style-image: url(./assets/linkedin.png);
+  
+
+}
+
+ul #github{
+    list-style-image: url(./assets/github.png);
+   
+
+}
+
+ul , li{
+    padding: 20px;
+}
+
+nav{
+
+   border: none;
+   padding: 20px;
+   margin: 20px;
+    display: flex;
+    justify-content:center
+ 
+
+
+   
+  
+    
+}
+
+
+#titulo-principal{
+    padding: 50px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    max-width:800px;
+    background-color: rgba(74, 22, 122, 0.952);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+#imagem-titulo{
+    border-radius: 10px;
+}
+
+.artigos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 20px;
+     
+  
+}
+
+.img-game{
+    border-radius: 8px;
+}
+
+.desciption-container{
+    background-color: rgba(0, 0, 0, 0.89);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+     margin: 10px;
+}
+
+.desciption-container h2 {
+    font-size: 30px;
+    color: aliceblue;
+    display: flex;
+    justify-content:flex-start
+
+}
+
+.descricao{
+    font-size: 20px;
+    color: aliceblue;
+   
+}
+
+.itens-card{
+    padding: 15px;
+}
+
+
+section{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+
+ol{
+    position: relative;
+    transform: skewY(-15deg);
+    padding: 100px;
+    
+}
+
+ol li{
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(72, 70, 73);
+    padding: 20px;
+    z-index: var(--i);
+    transition: 0.5s;
+}
+ol li:hover{
+    background: #33a3ee;
+    transform: translateX(-40px);
+}
+ol li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background-color:  rgb(72, 70, 73);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+ol li:hover::before{
+    background:#33a3ee;
+}
+ol li::after{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    background-color:  rgb(72, 70, 73);
+    transform-origin: bottom;
+    transform: skewx(45deg);
+    transition: 0.5s;
+
+}
+ol li:hover::after{
+background: #33a3ee;
+}
+ol li a{
+    text-decoration: none;
+    color:rgb(195, 115, 206);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+ol li:hover a{
+    color: white;
+}
+
+ol li:last-child::after{
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.50);
+}
+
+
+section .links{
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 36px;
+}
+
+.links{
+    padding: 50px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    max-width:800px;
+    background-color: rgba(74, 22, 122, 0.952);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.links h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    padding: 50px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    max-width:600px;
+    background-color: rgba(74, 22, 122, 0.658);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
